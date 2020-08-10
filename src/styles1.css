@@ -1,0 +1,200 @@
+h1 {
+  text-align: center;
+}
+
+.flexbox {
+  display: flex;
+  /* justify-content: center; */
+  /* flex-direction: row; */
+  background-color: #6260bd;
+  border-radius: 15px 50px;
+  width: 576px;
+  max-width: 768px;
+  height: 620px;
+
+  overflow: hidden;
+  margin: 15px auto;
+  padding: 15px auto;
+}
+
+.flexbox .board {
+  border-radius: 15px 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  width: 100%;
+  max-width: 768px;
+  height: 500px;
+
+  background-color: #313131;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: -25px;
+  padding: 10px;
+}
+
+.flexbox .board ._questionBoard .card #centerT {
+  color: "red";
+}
+
+/* bottomFlex */
+.bottomFlex {
+  /* justify-content: center; */
+  /* margin: 540px 40px 20px -180px; */
+  margin: 0 auto;
+  padding: 0px;
+  width: 50px;
+  /* height: 100px; */
+  /* padding-right: 20px; */
+}
+
+/* choices board 
+  > bottom 
+  > it should contains the cards in row flex
+*/
+.bottomFlex ._choiceBoard {
+  border-radius: 15px 50px;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  margin: 540px 10px 0px -430px;
+
+  /* width: 100%; */
+  min-width: 200px;
+  height: 70px;
+  background-color: #313131;
+  /* margin-right:390px; */
+  /* margin: 0 30px 0 0; */
+  padding-right: 20px;
+}
+
+/* choices card to drag */
+.bottomFlex ._choiceBoard .card {
+  border-radius: 15px 50px 30px 5px;
+  cursor: pointer;
+  /* margin-bottom: px; */
+  /* width: 300px; */
+
+  /* margin: 2px;
+  line-height: 15px;
+  font-size: 15px;
+  text-align: center;
+  background-color: #0ba725;
+  padding: 1px 5px; */
+
+  font-size: 15px;
+  text-align: center;
+  background-color: white;
+
+  float: left;
+  margin-bottom: -10px;
+  margin: 15px;
+  padding: 0px;
+  height: 40px;
+  width: 150px;
+}
+
+.flexbox .board .card {
+  cursor: pointer;
+  /* margin-bottom: px; */
+  width: 100px;
+  margin: 2px;
+  line-height: 15px;
+  font-size: 15px;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 1px 5px;
+}
+
+/* question board setup */
+
+/* question board setup */
+.flexbox .board ._questionBoard {
+  /* background-color: #737373; */
+  /* width: 440px;
+  margin-top: 10px; */
+
+  margin: 10px;
+  width: 155px;
+  height: 60px;
+  /* min-width: 70px;
+  min-height: 20px; */
+  /* height: 90px; */
+}
+
+/* answers board setup */
+.flexbox .board ._questionBoard .card {
+  /* background-color: #4207cc; */
+
+  border-radius: 15px 50px 30px 5px;
+  background-color: #67c968;
+  float: left;
+  margin-bottom: -10px;
+  padding: 0px;
+  height: 40px;
+  width: 150px;
+}
+
+/* pTag for answer card answers */
+.flexbox .board .drag1 {
+  border-radius: 15px 50px 30px 5px;
+  display: flex;
+  outline-style: dashed;
+  /* border: 15px solid green; */
+  width: 155px;
+  height: 40px;
+  min-width: 70px;
+  min-height: 20px;
+}
+
+/* span tag for qn */
+.flexbox .board .qn1 {
+  /* border: 1px solid yellow; */
+  float: left;
+  width: 265px;
+  height: 20px;
+  margin-left: 160px;
+  margin-top: -40px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  text-align: left;
+  /* font-size: 10px; */
+  color: white;
+}
+
+/* reset key */
+
+._buttons {
+  margin-top: 380px;
+  margin-right: 5px;
+  padding: 0px;
+  width: px;
+  height: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
